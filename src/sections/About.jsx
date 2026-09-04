@@ -39,7 +39,7 @@ export default function About() {
               <span className="w-8 h-px bg-verde-ia" />
               Quiénes somos
             </p>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-carbon leading-[1.05] tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-carbon leading-[1.1] tracking-tight">
               Un fabricante,
               <br />
               <span className="text-verde-ia">veinte productos.</span>

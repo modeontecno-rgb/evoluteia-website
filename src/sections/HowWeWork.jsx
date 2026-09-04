@@ -24,7 +24,7 @@ export default function HowWeWork() {
             <span className="w-8 h-px bg-verde-ia" />
             Cómo trabajamos
           </p>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-carbon tracking-tight leading-[1.05]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-carbon tracking-tight leading-[1.1]">
             Lo que puedes{" "}
             <span className="text-verde-ia">esperar</span> de nosotros.
           </h2>

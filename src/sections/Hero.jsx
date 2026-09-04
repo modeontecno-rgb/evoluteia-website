@@ -38,7 +38,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[3.5rem] leading-[1.02] md:text-[6.5rem] md:leading-[0.98] lg:text-[7.5rem] font-black text-carbon max-w-6xl tracking-[-0.04em]"
+          className="text-[2.5rem] leading-[1.1] md:text-[3.5rem] md:leading-[1.08] lg:text-[4.5rem] font-bold text-carbon max-w-6xl tracking-tight"
         >
           Software de gestión{" "}
           <span className="bg-gradient-to-r from-verde-profundo via-verde-ia to-verde-profundo bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient">
@@ -65,22 +65,21 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-12 flex flex-wrap items-center gap-5"
+          className="mt-10 flex flex-wrap items-center gap-4"
         >
           <a
             href="#contacto"
             data-cursor-hover
-            className="group relative inline-flex items-center rounded-full bg-gradient-to-r from-verde-profundo to-verde-oscuro text-white font-bold text-lg px-10 py-5 overflow-hidden transition-all hover:scale-105 hover:shadow-2xl hover:shadow-verde-ia/20"
+            className="inline-flex items-center rounded-full bg-verde-profundo text-white font-semibold text-base px-8 py-3 hover:bg-verde-oscuro transition-all duration-300 hover:shadow-lg hover:shadow-verde-ia/15"
           >
-            <span className="relative z-10">Cuéntame tu problema</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-verde-ia to-verde-profundo opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            Cuéntame tu problema
           </a>
           <a
             href="#productos"
             data-cursor-hover
-            className="inline-flex items-center rounded-full border-2 border-carbon/20 text-carbon font-bold text-lg px-10 py-5 hover:border-verde-ia hover:bg-verde-ia/5 transition-all hover:scale-105"
+            className="inline-flex items-center rounded-full border border-carbon/20 text-carbon font-semibold text-base px-8 py-3 hover:border-verde-ia hover:bg-verde-ia/3 transition-all duration-300"
           >
-            Ver los 20 productos →
+            Ver los 20 productos
           </a>
         </motion.div>
 

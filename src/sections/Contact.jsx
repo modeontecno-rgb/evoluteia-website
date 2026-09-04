@@ -57,7 +57,7 @@ export default function Contact() {
               <span className="w-8 h-px bg-verde-ia" />
               Hablemos de tu problema
             </p>
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05]">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1]">
               Cuéntanos qué necesitas{" "}
               <span className="text-verde-ia">y te pasamos presupuesto.</span>
             </h2>

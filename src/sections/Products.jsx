@@ -20,7 +20,7 @@ export default function Products() {
             <span className="w-8 h-px bg-verde-ia" />
             Portfolio de productos
           </p>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-carbon tracking-tight leading-[1.05]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-carbon tracking-tight leading-[1.1]">
             Veinte aplicativos para{" "}
             <span className="text-verde-ia">veinte oficios.</span>
           </h2>
@@ -58,10 +58,10 @@ export default function Products() {
                 transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 onClick={() => setSelected(p)}
                 data-cursor-hover
-                className="group relative text-left rounded-3xl bg-white border border-menta hover:border-verde-ia/50 transition-all duration-500 p-8 flex flex-col h-full overflow-hidden hover:shadow-2xl hover:shadow-verde-ia/10 hover:-translate-y-2"
+                className="group relative text-left rounded-2xl bg-white border border-menta/60 hover:border-verde-ia/40 transition-all duration-400 p-7 flex flex-col h-full overflow-hidden hover:shadow-lg hover:shadow-verde-ia/8 hover:-translate-y-1"
               >
-                {/* Gradient hover effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-verde-ia/0 via-menta/0 to-verde-ia/0 group-hover:from-verde-ia/5 group-hover:via-menta/30 group-hover:to-verde-ia/5 transition-all duration-700 -z-10" />
+                {/* Gradient hover effect suave */}
+                <div className="absolute inset-0 bg-gradient-to-br from-verde-ia/0 via-menta/0 to-verde-ia/0 group-hover:from-verde-ia/3 group-hover:via-menta/15 group-hover:to-verde-ia/3 transition-all duration-500 -z-10" />
                 
                 <div className="flex items-start justify-between gap-3 mb-5">
                   <h3 className="font-black text-carbon text-xl tracking-tight group-hover:text-verde-profundo transition-colors">
