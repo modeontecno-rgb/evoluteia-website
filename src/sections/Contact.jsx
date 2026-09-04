@@ -47,22 +47,23 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-6 lg:px-10 relative">
         <div className="grid lg:grid-cols-5 gap-16">
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
             className="lg:col-span-2"
           >
-            <p className="text-sm font-semibold text-verde-ia uppercase tracking-widest mb-4">
+            <p className="text-sm font-bold text-verde-ia uppercase tracking-widest mb-6 flex items-center gap-2">
+              <span className="w-8 h-px bg-verde-ia" />
               Hablemos de tu problema
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-tight">
-              Cuentanos que necesitas y te pasamos presupuesto.
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05]">
+              Cuéntanos qué necesitas{" "}
+              <span className="text-verde-ia">y te pasamos presupuesto.</span>
             </h2>
-            <p className="mt-6 text-white/70 leading-relaxed">
-              Sin compromiso y sin llamadas insistentes: solo lo justo para entender tu
-              negocio y proponerte el aplicativo que mejor encaja, con precio claro desde
-              el principio.
+            <p className="mt-8 text-xl md:text-2xl text-white/80 leading-relaxed font-medium">
+              Sin compromiso y sin llamadas insistentes. Solo lo justo para entender tu
+              negocio y proponerte el aplicativo que mejor encaja.
             </p>
 
             <div className="mt-10 space-y-4">

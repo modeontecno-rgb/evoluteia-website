@@ -15,16 +15,18 @@ export default function Products() {
   return (
     <section id="productos" className="py-24 md:py-32 bg-papel">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
-        <div className="max-w-2xl mb-14">
-          <p className="text-sm font-semibold text-verde-ia uppercase tracking-widest mb-4">
+        <div className="max-w-3xl mb-16">
+          <p className="text-sm font-bold text-verde-ia uppercase tracking-widest mb-6 flex items-center gap-2">
+            <span className="w-8 h-px bg-verde-ia" />
             Portfolio de productos
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-carbon tracking-tight">
-            Veinte aplicativos para veinte oficios.
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-carbon tracking-tight leading-[1.05]">
+            Veinte aplicativos para{" "}
+            <span className="text-verde-ia">veinte oficios.</span>
           </h2>
-          <p className="mt-5 text-lg text-gris leading-relaxed">
-            Cada producto resuelve bien una cosa concreta. Filtra por sector y entra en el
-            que se parezca a tu problema.
+          <p className="mt-7 text-xl md:text-2xl text-gris/90 leading-relaxed font-medium">
+            Cada producto resuelve bien una cosa concreta. Filtra por sector y descubre el
+            que encaja con tu problema.
           </p>
         </div>
 
