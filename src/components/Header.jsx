@@ -20,24 +20,27 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-papel/90 backdrop-blur-md shadow-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+        scrolled 
+          ? "bg-white/80 backdrop-blur-xl shadow-lg shadow-carbon/5 border-b border-menta/50" 
+          : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20">
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-20 md:h-24">
         <a href="#top" className="flex items-center gap-2" data-cursor-hover>
           <img src={logoColor} alt="Soluciones EvoluteIA" className="h-8 md:h-9 w-auto" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden md:flex items-center gap-12">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               data-cursor-hover
-              className="text-[15px] font-medium text-carbon/80 hover:text-verde-ia transition-colors"
+              className="text-base font-semibold text-carbon/70 hover:text-verde-ia transition-all duration-300 relative group"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-verde-ia group-hover:w-full transition-all duration-300" />
             </a>
           ))}
         </nav>
@@ -45,9 +48,9 @@ export default function Header() {
         <a
           href="#contacto"
           data-cursor-hover
-          className="hidden md:inline-flex items-center rounded-full bg-verde-profundo text-white text-sm font-semibold px-6 py-2.5 hover:bg-verde-oscuro transition-colors"
+          className="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-verde-profundo to-verde-oscuro text-white text-sm font-bold px-8 py-3 hover:scale-105 hover:shadow-lg hover:shadow-verde-ia/30 transition-all duration-300"
         >
-          Cuentanos tu proyecto
+          Cuéntanos tu proyecto
         </a>
 
         <button

@@ -50,22 +50,27 @@ export default function Products() {
               <motion.button
                 layout
                 key={p.id}
-                initial={{ opacity: 0, y: 16 }}
+                initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                transition={{ duration: 0.35 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 onClick={() => setSelected(p)}
                 data-cursor-hover
-                className="text-left rounded-2xl bg-white border border-menta hover:border-verde-ia hover:shadow-lg hover:shadow-verde-ia/5 transition-all p-7 flex flex-col h-full"
+                className="group relative text-left rounded-3xl bg-white border border-menta hover:border-verde-ia/50 transition-all duration-500 p-8 flex flex-col h-full overflow-hidden hover:shadow-2xl hover:shadow-verde-ia/10 hover:-translate-y-2"
               >
-                <div className="flex items-start justify-between gap-3 mb-4">
-                  <h3 className="font-bold text-carbon text-lg tracking-tight">{p.name}</h3>
-                  <ArrowUpRight className="w-5 h-5 text-verde-ia shrink-0" />
+                {/* Gradient hover effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-verde-ia/0 via-menta/0 to-verde-ia/0 group-hover:from-verde-ia/5 group-hover:via-menta/30 group-hover:to-verde-ia/5 transition-all duration-700 -z-10" />
+                
+                <div className="flex items-start justify-between gap-3 mb-5">
+                  <h3 className="font-black text-carbon text-xl tracking-tight group-hover:text-verde-profundo transition-colors">
+                    {p.name}
+                  </h3>
+                  <ArrowUpRight className="w-6 h-6 text-verde-ia shrink-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                 </div>
-                <p className="text-carbon/80 text-sm leading-relaxed mb-5">{p.tagline}</p>
-                <div className="mt-auto flex items-center justify-between pt-4 border-t border-menta">
-                  <span className="text-xs font-semibold text-verde-profundo">{p.price}</span>
-                  <span className="text-xs text-gris">{p.url}</span>
+                <p className="text-carbon/70 text-base leading-relaxed mb-6 group-hover:text-carbon transition-colors">{p.tagline}</p>
+                <div className="mt-auto flex items-center justify-between pt-5 border-t border-menta/50 group-hover:border-verde-ia/30 transition-colors">
+                  <span className="text-sm font-bold text-verde-profundo">{p.price}</span>
+                  <span className="text-xs text-gris/70 group-hover:text-gris transition-colors">{p.url}</span>
                 </div>
               </motion.button>
             ))}
